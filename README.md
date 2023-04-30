@@ -61,19 +61,19 @@ THe sample repository contains two simplest examples of ObjectScript classes: Ob
 
 ```
 $ docker-compose exec iris iris session iris -U IRISAPP
-IRISAPP>write ##class(dc.sample.ObjectScript).Test()
+IRISAPP>write ##class(shvarov.sample.ObjectScript).Test()
 It works!
 42
 ```
 
 
 
-2. Class `dc.sample.PersistentClass` contains a method `CreateRecord` that creates an object with one property, `Test`, and returns its id.
+2. Class `shvarov.sample.PersistentClass` contains a method `CreateRecord` that creates an object with one property, `Test`, and returns its id.
 
 Open IRIS terminal and run:
 
 ```
-IRISAPP>write ##class(dc.sample.PersistentClass).CreateRecord(.id)
+IRISAPP>write ##class(shvarov.sample.PersistentClass).CreateRecord(.id)
 1
 IRISAPP>write id
 1
@@ -84,7 +84,7 @@ In your case the value of id could be different. And it will be different with e
 You can check whether the record exists and try to right the property of the object by its id.
 
 ```
-IRISAPP>write ##class(dc.sample.PersistentClass).ReadProperty(id)
+IRISAPP>write ##class(shvarov.sample.PersistentClass).ReadProperty(id)
 Test string
 ```
 
